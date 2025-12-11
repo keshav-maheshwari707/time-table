@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my document</title>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <label for="name">your name: </label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="email">your email: </label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="phone">phone number: </label>
+            <input type="tel" name="phone" id="phone" value="" placeholder="987">
+            <input type="submit" value="submit">
+            <button type="submit">submit</button>
+        </form>
+
+        <table border="1">
+            <tr>
+                <th>student</th>
+                <th>details</th>
+            </tr>
+            <tr>
+                <td>keshav</td>
+                <td>
+                    <table border="1">
+                        <tr>
+                            <th>course</th>
+                            <th>year</th>
+                        </tr>
+                        <tr>
+                            <td>bca</td>
+                            <td>3rd</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <form action="#">
+            <label for="date">date:</label>
+            <input type="date" name="date" id="date">
+            <br>
+            <br>
+            <label for="time">time:</label>
+            <input type="time" name="time" id="time">
+            <br>
+            <br>
+            <label for="city">select city:</label>
+            <select name="city" id="city">
+                <option value="delhi">delhi</option>
+                <option value="mumbai">mumbai</option>
+            </select>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+        </form>
+        <!-- <audio src=""></audio>
+        <video src=""></video> -->
+        <h2>Drag and Drop</h2>
+  <div id="drag-source" draggable="true">Drag me</div>
+  <div id="drop-target">Drop here</div>
+
+  <script>
+    const dragSource = document.getElementById("drag-source");
+    const dropTarget = document.getElementById("drop-target");
+
+    dragSource.addEventListener("dragstart", function (e) {
+      e.dataTransfer.setData("text/plain", "This box was dropped!");
+    });
+
+    dropTarget.addEventListener("dragover", function (e) {
+      e.preventDefault(); // allow drop
+    });
+
+    dropTarget.addEventListener("drop", function (e) {
+      e.preventDefault();
+      const data = e.dataTransfer.getData("text/plain");
+      dropTarget.textContent = data;
+      dropTarget.style.backgroundColor = "#d4ffd4";
+    });
+  </script>
+    </body>
+</html>

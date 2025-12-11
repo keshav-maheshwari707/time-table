@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* .festival-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    text-align: justify;
+} */
+
+/* .festival-img img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px;
+} */
